@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best hospital in india| Prolife.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&family=Bree+Serif&display=swap"
+        rel="stylesheet">
+        <style>
+                 /* CSS Reset  */
+ * {
+     margin: 0;
+     padding: 0;
+     
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+ 
+
+ /* CSS Variables  */
+ /* :root:{
+     --navbar-height: 59px;
+ } */
+
+ /* Navigation Bar */
+ #navbar{
+     display: flex;
+     align-items: center;
+     position: relative;
+     top: 5.5%;
+     position: sticky;
+     z-index: 2;
+ }
+
+ #mar{
+     top: 0;
+     position: sticky;
+ }
+
+ #navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 89%;
+   width: 100%;    
+   z-index: -1;
+   opacity: 0.5; 
+}
+
+ /* Navigation Bar: Logo and Image  */
+ #logo {
+    margin: 10px 35px;
+    height: 58px;
+    font-size: 27px;
+ } 
+
+ #logo img {
+    height: 87px;
+    margin: 3px 5px;
+ }
+
+
+ /* Navigation Bar: List Styling  */
+
+
+ #navbar ul{
+     display: flex;
+     font-family: 'Baloo Bhai 2', cursive; 
+ }
+
+ #navbar ul li{
+    
+     list-style: none;
+     font-size: 1.3rem;
+ }
+
+
+ #navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+
+
+ #navbar ul li a:hover{
+    color: black;
+   background-color: white;
+ }
+
+
+ /* Home Section  */
+ #home {
+     display: flex;
+     flex-direction: column;
+     padding: 3px 180px;
+     height: 500px;
+     justify-content: center;
+     align-items: center;
+ }
+
+ #home:before {
+    content: "";
+    background: url('../img/backg.jpg') no-repeat center center/cover;
+    position: absolute;
+    left: 0px; 
+    top: 0px;
+    height: 610px;
+   width: 100%;    
+   z-index: -1;
+   opacity: 0.8; 
+ }
+
+.pro{
+    font-family: 'Bree Serif', serif;
+}
+
+ #home h1 {
+     color: black;
+     text-align: center;
+     font-family: 'Bree Serif', serif;
+     font-size: 5rem;
+ }
+
+ #home p {
+     color: black;
+     text-align: center;
+     font-size: 2rem;
+     font-family: 'Bree Serif', serif;
+ }
+
+
+ /* Services Section  */
+#services {
+    margin: 14px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 2px 10px;
+    border-radius: 30px;
+    background: rgb(243, 229, 229);
+    margin-bottom: 30px;
+    width: 512px;
+    /* position: absolute; */
+    /* left: 10%; */
+}
+
+#services .box img {
+     width: 100px;
+     width: 70px;
+     display: block;
+     margin: auto;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* Client section  */
+
+#client-section {
+    position: relative;
+     /* height: 344px; */
+     
+}
+
+#client-section:before {
+   content: "";
+   position: absolute;
+   background: url('../img/backgg.jpg') no-repeat center center/cover;
+   height: 180%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.4;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+#clients img{
+   height: auto;
+   width: 93px;
+   height: 82px;
+}
+
+/* contact section  */
+#contact {
+    position: relative;
+    
+}
+
+#contact::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.7;
+   background: url('../img/contact us.jpg') no-repeat center center/cover;
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input, 
+#contact-box textarea {
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form {
+    width: 40%;
+  
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.5;
+}
+
+
+ /* Utility Clases */
+ .h-primary {
+     font-size: 3rem;
+     padding: 12px;
+     font-family: 'Bree Serif', serif;
+     
+ }
+ .h-secondary {
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+ }
+
+ .btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+ .center {
+     text-align: center;
+    
+ }
+
+ .box{
+     align-items: center;
+ }
+
+ .btnn1{
+    position: relative;
+    top: 4%;
+    left: 37%;
+ }
+ .btnn2{
+    position: relative;
+    top: 15%;
+    left: 38%;
+ }
+ .btnn3{
+    position: relative;
+    top: 4%;
+    left: 42%;
+ }
+
+.btnu{
+    background-color: lightblue;
+    border: 7px solid lightblue;
+    border-radius: 30px;
+    width:200px;
+    text-decoration: none;
+}
+
+.co{
+    left: 20.5%;
+    background-color: white;
+    width: 10%;
+    position: absolute;
+    top: 61%;
+    display: none;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+
+.b:hover + .co{
+   display: block;
+}
+.co:hover{
+    display: block;
+}
+.co:hover  .b{
+    background-color: white;
+}
+
+/* .b .co:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+} */
+
+.do{
+    left: 29.8%;
+    background-color: white;
+    width: 10%;
+    position: absolute;
+    top: 61%;
+    display: none;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+.c:hover + .do{
+    display: block;
+ }
+ .do:hover{
+     display: block;
+ }
+ .do:hover  .c{
+     background-color: white;
+ }
+
+
+.eo{
+    left: 38.4%;
+    background-color: white;
+    width: 10%;
+    position: absolute;
+    top: 61%;
+    display: none;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+.d:hover + .eo{
+    display: block;
+ }
+ .eo:hover{
+     display: block;
+ }
+ .eo:hover  .d{
+     background-color: white;
+ }
+
+.fo{
+    left: 49.7%;
+    background-color: white;
+    width: 10%;
+    position: absolute;
+    top: 61%;
+    display: none;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+.e:hover + .fo{
+    display: block;
+ }
+ .fo:hover{
+     display: block;
+ }
+ .fo:hover  .e{
+     background-color: white;
+ }
+
+.go{
+    left: 61.2%;
+    background-color: white;
+    width: 10%;
+    position: absolute;
+    top: 61%;
+    display: none;
+    border: 2px solid grey;
+    border-radius: 20px;
+}
+.f:hover + .go{
+    display: block;
+ }
+ .go:hover{
+     display: block;
+ }
+ .go:hover  .f{
+     background-color: white;
+ }
+
+
+        </style>
+</head>
+
+<body>
+    <marquee width="100%" direction="left" height="25px" scrollamount="5" id="mar" style="color:red;  background-color: white; padding-top: 1%; margin-top: 0%; font-size:14px; ">
+        <h1>This Page is under development</h1>
+        </marquee>
+    <nav id="navbar">
+        <div id="logo">
+            <H1 class="pro">PROLIV</H1>
+            <!-- <img src="logo.png" alt="Prolife"> -->
+        </div>
+        <ul>
+            <li class="item a"><a href="index.html">Home</a></li>
+            <li class="item b"><a href=""></ahref>About proliv</a></li>
+            <div class="co">
+                <div>
+                    <a style="padding-left: 24%; text-decoration: none;" href="aboutus.html">About us</a>
+                </div>
+                <div>
+                    <a style="padding-left: 19%; text-decoration: none;" href="career.html">Career at proliv</a>
+                </div>
+            </div>
+            <li class="item c"><a href="">Services</a></li>
+            <div class="do">
+                <div>
+                    <a style="padding-left: 27%; text-decoration: none;" href="radio.html">Radiology</a>
+                </div>
+                <div>
+                    <a style="padding-left: 27%; text-decoration: none;" href="cardio.html">Cardiology</a>
+                </div>
+            </div>
+            <li class="item d"><a href="">Contact Us</a></li>
+            <div class="eo">
+                <div>
+                    <a style="padding-left: 27%; text-decoration: none;" href="#contact">Email</a>
+                </div>
+                <div>
+                    <a style="padding-left: 27%; text-decoration: none;" href="whatsapp.html">Whatsapp</a>
+                </div>
+            </div>
+            <li class="item e"><a href="">Our technology</a></li>
+            <div class="fo">
+                <div>
+                    <a style="padding-left: 27%; text-decoration: none;" href="radio.html">Radiology</a>
+                </div>
+                <div>
+                    <a style="padding-left: 27%; text-decoration: none;" href="neuro.html">Neurology</a>
+                </div>
+            </div>
+            <li class="item f"><a href="">Our branches</a></li>
+            <div class="go">
+                <div>
+                    <a style="padding-left: 27%; text-decoration: none;" href="assam.html">Assam</a>
+                </div>
+                <div>
+                    <a style="padding-left: 27%; text-decoration: none;" href="kolkata.html">Kolkata</a>
+                </div>
+            </div>
+        </ul>
+
+    </nav>
+     <h1 style="font-family: 'Bree Serif', serif; text-align:center; color: red;">This page is down due to technical issue.We'll get it back shortly</h1>
+
+    <footer>
+        <div class="center">
+            copyright &copy; www.Proliv.com. All rights reserved!
+        </div>
+    </footer>
+
+</body>
+
+</html>
